@@ -20,5 +20,10 @@ class ViewController: NSViewController {
         webview.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A"
         webview.mainFrame.load(request)
     }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        self.view.window?.title = "Alexa"
+    }
 }
 
